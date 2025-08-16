@@ -1,0 +1,198 @@
+body{
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    display: flex;
+    justify-self: center;
+    height: min-content;
+    width: 50%;
+    margin-left: 100px;
+}
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box01{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    
+}
+
+#A {
+    transform: skewX();
+    animation-name: firstrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firstrow {
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(25, 0, 166);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#B {
+    transform: skewY();
+    animation-name: secondrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes secondrow{
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+
+.box22{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 87, 128);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#C{
+    transform: rotate();
+    animation-name: thirdrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes thirdrow{
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+.box31{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(79, 234, 255);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#E{
+    transform: rotateY();
+    animation-name: lst1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes lst1 {
+       0%{
+        transform:scaleY(1.0);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1.0);
+    }
+
+}
+
+.box32{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(138, 5, 0);
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+#F{
+    transform: rotateX();
+    animation-name: lst2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes  lst2{
+    0%{
+        transform:scaleX(1.0);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1.0);
+    }
+
+}
+
+.box33{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#G{
+    transform: rotate();
+    animation-name: lst3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lst3{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+a{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
